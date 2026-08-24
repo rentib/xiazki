@@ -63,6 +63,7 @@ make xiazki
 - go 1.25
 - [templ](https://templ.guide/quick-start/installation) 0.3.960
 - [tailwind](https://tailwindcss.com/docs/installation/tailwind-cli) 4.1
+- [air](https://github.com/air-verse/air)
 
 ```sh
 make dev
