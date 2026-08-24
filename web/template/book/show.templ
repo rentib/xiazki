@@ -1,8 +1,8 @@
 package book
 
 import (
-	"strconv"
 	"fmt"
+	"strconv"
 
 	"xiazki/internal/model"
 	"xiazki/web/template/layout"
@@ -197,10 +197,10 @@ templ Stats(bookID int64, stats model.ReviewStats) {
 		</div>
 		<div class="border-gray my-6 border-t"></div>
 		<h3 class="text-foreground mb-4 text-lg font-semibold">Your Rating</h3>
-		<div class="group mb-4 flex flex-row-reverse justify-center text-3xl">
+		<div class="group mb-4 flex flex-row-reverse justify-center text-2xl">
 			for i := 10; i >= 1; i-- {
 				{{
-					class := "peer cursor-pointer px-1 hover:text-yellow peer-hover:text-yellow group-hover:text-gray"
+					class := "peer cursor-pointer px-0.5 transition-colors hover:text-yellow peer-hover:text-yellow group-hover:text-gray"
 					if i <= int(stats.UserRating) {
 						class += " text-yellow"
 					} else {
